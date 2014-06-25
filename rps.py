@@ -23,9 +23,14 @@ def compare(choice1, choice2):
         print("That's not good enough, try again")
 
 rounds = int(raw_input("Enter number of rounds: "))
+player1_name = raw_input("Enter Player 1 name: ")
+player2_name = raw_input("Enter Player 2 name: ")
+
 counter = 0
 while counter != rounds:
     choice1 = choice()
     choice2 = choice()
     compare(choice1, choice2)
     counter += 1
+print("{} and {} If you stop playing, I'll hunt down your family!".format(player1_name, player2_name))
+
