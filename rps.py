@@ -29,7 +29,9 @@ player2_name = raw_input("Enter Player 2 name: ")
 counter = 0
 while counter != rounds:
     choice1 = choice()
+    print("{} chooses: {}".format(player1_name, choice1))
     choice2 = choice()
+    print("{} chooses: {}".format(player2_name, choice1))
     compare(choice1, choice2)
     counter += 1
 print("{} and {} If you stop playing, I'll hunt down your family!".format(player1_name, player2_name))
